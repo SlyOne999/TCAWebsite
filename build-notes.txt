@@ -1,0 +1,61 @@
+Build notes
+---------------
+Used VS Code IDE  - https://code.visualstudio.com
+VS Code extensions:
+  Bootstrap 5 & Font Awesome Snippets
+  HTML CSS Support - Visual Studio Code CSS Intellisense for HTML
+  Live Server - Launch a development local Server with live reload feature for static & dynamic pages
+
+References
+--------------
+Bootstrap5 - https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+W3 Schools
+  HTML - https://www.w3schools.com/html/default.asp
+  CSS - https://www.w3schools.com/css/default.asp
+  Bootstrap 5 - https://www.w3schools.com/bootstrap5/index.php
+  How tos (lots of code snippets here) - https://www.w3schools.com/howto/default.asp
+
+Build
+--------------
+HTML/CSS/JS
+Responsive framework was built using Bootstrap which makes life easier.
+Adjustments and styles were made using CSS along with a media query at the bottom of the stylesheet for small devices.
+Javascript from the accordion was a plugin from W3 Schools so didn't need any editing.
+Footer year date will update automatically via javascript which can be found on YouTube.
+
+Site structure
+--------------
+root
+ CSS>
+   styles.css
+ JS>
+   script.js
+ images>
+   images for entire site
+ docs>
+   club-docs>
+     all documents required for British Canoeing
+   committee>
+     all documents relating to committee responsibilities
+   news>
+     newsletters
+ index.html
+
+Maintenance load
+----------------------------------
+All docs are in PDF format - easy for display and downloading
+Newsletter publishing - periodically
+AGM publishing - periodically
+Committee member updates - on changeover
+
+Text - <p> tags, dropdowns
+----------------------------------
+Price and season date updates - annually
+Coaching and awards updates
+
+NB: Footer dates change automatically
+
+
+
+
