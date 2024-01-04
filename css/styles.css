@@ -149,7 +149,8 @@ p, li{
   border-left: 10px solid orangered;
 }
 
-@media screen and (max-width: 800px) { 
+/*-- 768px = Bootstrap's small - medium screen sizes --*/
+@media screen and (max-width: 768px) { 
   .column-66, 
   .column-33 {
     width: 100%;
