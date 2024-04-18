@@ -56,8 +56,5 @@ Coaching and awards updates
 
 NB: Footer dates change automatically
 
-Added this line to force a modification to test distribution script 
-
-
 
 
