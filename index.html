@@ -4,14 +4,15 @@
 <!-- deploy version 1.0 07/12/2023 -->
 <!-- club docs and committee info commented out until updated -->
 <!-- 27/12/2023 converted news link to dropdown menu to accommodate sevaral newsletters, re-ordered menu-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tamar Canoe Association</title>
+<!-- 19/12/2024 added icon links to facebook and instagram groups to menubar, added menu link for news and events to accomoddate trips PDF, replaced some images, removed commented out code, deleated old PDF docs -->
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Tamar Canoe Association</title>
 <!-- bootstrap css-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <!-- bootstrap icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <!-- local css -->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="icon" type="image/x-icon" href="images/logo.jpg">
@@ -34,20 +35,20 @@
           <a class="nav-link" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Location</a>
         </li>
         
-        <li class="nav-item"><a class="nav-link" href="/docs/club-docs/membershipform.pdf" target="_blank">Join</a></li>
+        <li class="nav-item"><a class="nav-link" href="/docs/club-docs/membership-form.pdf" target="_blank">Join</a></li>
 
         <li class="nav-item"><a class="nav-link" href="#coaching">Coaching</a></li>
 
         <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">News</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">News and Events</a>
           <ul class="dropdown-menu">
+            <li><a class="nav-link" href="/docs/news/trips-and-courses-2024.pdf" target="_blank">Events 2024</a></li>            
             <li><a class="nav-link" href="/docs/news/newsletter-winter2023.pdf" target="_blank">Winter 2023</a></li>
             <li><a class="nav-link" href="/docs/news/newsletter-summer2023.pdf" target="_blank">Summer 2023</a></li>
           </ul>
         </li>
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacts</a>
           <ul class="dropdown-menu">
@@ -63,6 +64,11 @@
             <li><a class="dropdown-item" href="mailto: webmaster@tamarcanoeassociation.org.uk" target="_blank">Web Team</a></li>
           </ul>
         </li>
+
+        <!--facebook and instagram links-->
+        <li><a href="https://www.facebook.com/share/gyEKfafgbsSY1APg/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+       <li><a href="https://www.instagram.com/tamarcanoe?igsh=Y2t4bTFkOWV4MjB2" target="_blank"><i class="bi bi-instagram m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+
       </ul>
     </div>
   </div>
@@ -90,7 +96,7 @@
     <div class="carousel-item">
       <img src="images/caroucel-paddling.jpg" alt="kayaking group on the sea" class="d-block" style="width:100%; max-height:650px;">
       <div class="carousel-caption">
-        <h1 class="caroucel-h1">Kayaking<br><span class="caroucel-h2">Sea - River - Whitewater</span></h1>
+        <h1 class="caroucel-h1">Kayaking<br><span class="caroucel-h2">Sea - River - Whitewater - Surf</span></h1>
       </div> 
     </div>
     <div class="carousel-item">
@@ -125,6 +131,7 @@
        <div class="lt-grey">
         <h2>Joining</h2>
         <p>The Tamar Canoe Association is based at <a  class="text-decoration-none" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Jubilee Green, Saltash, Cornwall.</a></p>
+        <p>What3words: ///quick.dish.kite</p>
         <p>The club welcomes anyone interested in joining us on the water whatever your experience be it for your first Paddle to the experienced Paddler there is something for everyone. The Club caters for Canoes, Kayaks, Sit on Tops and Stand Up Paddleboards not sure which is right for you come and give them all a try to see which you like best. * min age applies.</p>
         <p>We meet on Thursday evenings from 18:30 - 21:00 throughout the summer from April until the end of September with weekend trips planned for those who wish to take part.</p>
         <p>The Tamar Canoe Association is a recreational  Club  Affiliated to British Canoeing run by Volunteers who give their time freely for the benefit of all.</p>
@@ -132,11 +139,11 @@
   <!-- accordians from https://www.w3schools.com/ --> 
   <button class="accordion">Beginners, experienced paddlers and young people</button>
   <div class="panel mb-1">
-    <p class="my-4">Introductory Courses - run on Wednesday evenings and last for four weeks.<br>Two Day Introductory Courses - run on some weekends.<br>Please see the <a class="text-decoration-none" href="/docs/club-docs/membershipform.pdf" target="_blank">Membership Form</a> for more infomation.</p>
+    <p class="my-4">Introductory Courses - run on Wednesday evenings and last for four weeks.<br>Two Day Introductory Courses - run on some weekends.<br>Please see the <a class="text-decoration-none" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership Form</a> for more information.</p>
 
       <p>When your course finishes you are welcome to join the Thursday club nights and integrate into the courses or paddling trips being run.</p>
     <p>If you have paddled before and just wish to join the club please <a class="text-decoration-none" href="mailto: membership@tamarcanoeassociation.org.uk
-      " target="_blank">make contact</a> and come along.</p>
+      " target="_blank">make contact</a> before sending membership form.</p>
     <p>Membership is open to anyone over 11, 8 if Parents / guardian on the water.</p>
   </div>
 
@@ -199,15 +206,15 @@
 
 <div class="btn-center"> <!-- only on small devices -->
     <button class="btn bi btn-lg btn-center" style="background-color: orangered; margin-top: 50px;">
-      <a class="text-decoration-none" href="/docs/club-docs/membershipform.pdf" target="_blank" style="color:white">Membership form</a>
+      <a class="text-decoration-none" href="/docs/club-docs/membership-form.pdf" target="_blank" style="color:white">Membership form</a>
     </button>
 </div>
 </div>
       
       <div class="column-33">
-        <img src="images/cornwall-flag.jpg" class="img-fluid no-img mb-3" alt="cornish flag">
+        <img src="images/club-site.jpg" class="img-fluid no-img mb-3" alt="club site ate jubilee green, saltash, cornwall">
         <img src="images/whitewater1.jpg" class="img-fluid no-img mb-3" alt="kayaker paddeling on whitewater">
-        <img src="images/bridge.jpg" class="img-fluid no-img" alt="kayaker paddeling on whitewater">
+        <img src="images/kayak.jpg" class="img-fluid no-img" alt="kayaker paddeling on whitewater">
       </div>
     </div>
   </div>
@@ -220,7 +227,7 @@
       
       <div class="column-33">
         <img src="images/paddling.jpg" class="img-fluid no-img mb-3" alt="kayaking group at sea near rocks">
-        <img src="images/saltash.jpg" class="img-fluid no-img mb-3"  alt="view of saltash, cornwall from the river tamar">
+        <img src="images/jubilee-green.jpg" class="img-fluid no-img mb-3"  alt="view of Jubilee Green from the club site">
         <img src="images/whitewater2.jpg" class="img-fluid" alt="paddlinboarding group on a river">
       </div>
       <div class="column-66">
@@ -245,8 +252,8 @@
           
           <h2 style="margin-top: 30px;">Club activities</h2>
           <p>Please remember the club is not just here to coach, anyone with their basic skills can just come along for a sociable paddle joining like minded paddlers, please contact us if you wish to find out more.</p>
-      </div>
-    </div>
+  </div>
+   </div>
   </div>
 </div>
 
@@ -300,36 +307,11 @@
           </div>
         </div>
 
-        <!-- coaches names dissabled for now
-       <hr>
-        <h2>Coaches</h2>
-        <p style="color: red;">Only if coaches wish to have their names here</p>
-        <div class="row">
-          <div class="col">
-        <ul>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-        </ul>
-        </div>
-      
-        <div class="col">
-        <ul>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-          <li>coach name</li>
-        </ul>
-        </div>
-      </div>-->
     </div>
 </div>
       <div class="column-33">
         <img src="images/kayaks-beach.jpg" class="img-fluid no-img mb-3" alt="kayaks on a river shoreline">
-        <img src="images/duckpond.jpg" class="img-fluid no-img" alt="group of ducks on the river">
+        <img src="images/kayaks1.jpg" class="img-fluid no-img" alt="group of kayakers on a local river">
       </div>
     </div>
   </div>
@@ -356,8 +338,8 @@
         <!-- quote -->
         <div class="div-centered" style="margin-top:60px;">
           <div style="border-left: 8px solid orangered;">
-            <!-- <i class="bi bi-quote quote-icon m-1"></i> If line below fails
-            <span class="quote-icon m-1">❝</span> -->
+            <!-- <i class="bi bi-quote quote-icon m-1"></i> If line below fails-->
+            <span class="quote-icon m-1">❝</span>
             <p class="quote-txt p-2">Believe me, my young friend, there is nothing - absolutely nothing - half so much worth doing as simply messing about in boats.<br>
               ~ Kenneth Grahame.</p>
           </div>
@@ -369,112 +351,6 @@
 
 <!-- footer ----------------------------------------------------------------------------->
 <div id="links" class="footer-index">
-
-<!-- club documentation -->
-<!-- <div class="row mt-4">
-  <h2 class="h2-footer">Club documentation</h2>
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/membershipform.pdf" target="_blank">Membership Form</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/handbook.pdf" target="_blank">Club Handbook</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/completepolicies.pdf" target="_blank">Club Policies</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/childandvapolicy.pdf" target="_blank">Child and Vunerable Adult Policy</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/policyadoption.pdf" target="_blank">Policy Adoption</a></li>
-    </ul>
-  </div>
-  
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/constitution-sept23.pdf" target="_blank">Constitution</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/actionplan.pdf" target="_blank">Action Plan</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/coachratio.pdf" target="_blank">Coach Ratio</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/raclubnights.pdf" target="_blank">Risk Assessment - Club Night</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/raestuaryandsea.pdf" target="_blank">Risk Assessment - Estuary and Sea</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/topclub.pdf" target="_blank">Top Club</a></li>
-      <li class="text-bg-warning">2023 AGM Minutes - not on site</li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/welfare.pdf" target="_blank">Welfare Officers</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/sst.pdf" target="_blank">Level 1 Site Specific Training</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/code-of-conduct.pdf" target="_blank">Club Code of Conduct</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/emergencyprocedures.pdf" target="_blank">Emergency Procedures</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/ramovingwater.pdf" target="_blank">Risk Assessment - Moving Water</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/rapoolsessions.pdf" target="_blank">Risk Assessment - Swimming Pool</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/clubmark.pdf " target="_blank">Club Mark</a></li>
-    </ul>
-  </div>
-</div>
-<hr>
-
-Committee
-<div class="row">
-  <h2 class="h2-footer">Committee</h2>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/committee/chairman.pdf" target="_blank">Chairman - Emma Lock</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/vicechairman.pdf" target="_blank">Vice Chairman - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/clubmarkcoordinator.pdf" target="_blank">Club Mark Co-ordinator - Peter Crago</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/membershipsec.pdf" target="_blank">Membership Secretary - Phil Thorn</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/secretary.pdf" target="_blank">Secretary - Ina Nicks</a></li>
-
-      <li><a class= "text-decoration-none" href="/docs/committee/treasurer.pdf" target="_blank">Treasurer - Hilary Winsor</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/poolcoordinator.pdf" target="_blank">Pool Program Coordinator - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/newslettereditor.pdf" target="_blank">Newsletter Editors - Alison Dunbar / Clair Stevens</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/seniorrep.pdf" target="_blank">Senior Representative - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/familyrep.pdf" target="_blank">Family Representative - TBC</a></li>
-
-      <li class="text-bg-warning">Junior Representative - TBC + no docs</a></li>
-    </ul>
-  </div>
-  
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/media.pdf" target="_blank">Media - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/socialsec.pdf" target="_blank">Social Secretary - Kellie Summerfield</a></li>
-
-      <li class="text-bg-warning">Coach Development Officer - TBC + no docs</li>
-
-      <li><a class="text-decoration-none text-bg-warning" href="/docs/committee/childprotectionofficer.pdf" target="_blank">Club Welfare Officers - TBC</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/eventsorganiser.pdf" target="_blank">Event Welfare Officer - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/webmaster.pdf" target="_blank">Website Team - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/equipmentofficer.pdf" target="_blank">Equipment Coordinator - TBC</a></li>
-      
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/summerwintercoordinator.pdf" target="_blank">Summer and Winter Program Coordinator - TBC</a></li>
-    </ul>
-  </div>
-</div>
- -->
-
-
 
 <!-- links -->
   <!-- <hr> -->
@@ -523,17 +399,15 @@ Committee
   <hr>
 <!-- banners -->
 <div class="row  mt-4">
-  <div class="col-sm-12 col-md-6">
-    <img class="rounded mx-auto" src="images/sportengland.jpg"  style="display:block;" alt="sport england logo">
-    <h2 class="h2-footer text-center mt-2">Sport England</h2>
-    <p class="text-center">Tamar Canoe Association has been awarded<br>Lottery Funding through Sport England</p>    
+
+  <div class="col-sm-12 mb-3 col-md-6">
+    <img class="rounded mx-auto" src="images/lottery-sport-england.jpg"  style="display:block;" alt="lottery funded sport england logo">   
   </div>
 
-  <div class="col-sm-12 col-md-6">
-    <img class="rounded mx-auto" src="images/topclub.jpg" style="display:block;" alt="british canoing top club award logo">
-    <h2 class="h2-footer text-center mt-2">British Canoeing</h2>
-    <p class="text-center">Tamar Canoe Association has achieved<br>Club Mark Status</p>
+   <div class="col-sm-12 col-md-6">
+    <img class="rounded mx-auto" src="images/paddle-england-aff-club-logo.jpg" style="display:block;" alt="paddle england logo">
   </div>
+
 </div>
 <hr>
 
