@@ -95,7 +95,7 @@ p, li{
 
 .panel {
   padding: 0 18px;
-  background-color: whitesmoke;
+  background-color: white;
   max-height: 0;
   overflow: auto;
   transition: max-height 0.2s ease-out;
@@ -120,7 +120,7 @@ p, li{
 
 /* section colors */
 .odd-section-color{
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .lt-grey{
