@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Updated: 05/07/2024 -->  
+  <!-- Updated: 07/07/2024 -->  
   <title>Tamar Canoe Association</title>  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
         
         <li class="nav-item">
           <a class="nav-link" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Location</a>
@@ -43,10 +43,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">News and Events</a>
           <ul class="dropdown-menu">
-            <li><a class="nav-link" href="/docs/news/newsletter-june2024.pdf" target="_blank">Newsletter June 2024</a></li>            
-            <li><a class="nav-link" href="/docs/news/trips-and-courses-2024.pdf" target="_blank">Events 2024</a></li>            
+            <li><a class="nav-link" href="/docs/news/newsletter-june2024.pdf" target="_blank">Newsletter June</a></li>
+            <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events</a>   </li>
           </ul>
-        </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacts</a>
@@ -63,6 +62,8 @@
             <li><a class="dropdown-item" href="mailto: webmaster@tamarcanoeassociation.org.uk" target="_blank">Web Team</a></li>
           </ul>
         </li>
+        
+        <li class="nav-item"><a class="nav-link" href="/adds/adds.html" style="color: blue;">Boats for sale</a></li>     
 
         <!--facebook and instagram links-->
         <li><a href="https://www.facebook.com/share/gyEKfafgbsSY1APg/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
@@ -72,6 +73,63 @@
     </div>
   </div>
 </nav>
+
+
+<!-- Evants Modal -->
+<div class="modal fade" id="eventsModal">
+<div class="modal-dialog modal-dialog-scrollable">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">Latest Events</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+<strong>Trips</strong>
+<p>7th April Surfing at Seaton Peter<br>
+14th April Looe dependant on weather sea Paddle or trip up river Peter<br>
+28th April gentle Sea trip / Sea Paddler Award Taster if interest. Peter<br>
+5th May Sea Paddle St Austell Area. Peter<br>
+19th May* Paddle from Boathouse Mike S<br>
+16th June * Paddle from Boathouse Mike S<br>
+13th - 14th* July Saltash Regatta Ina<br>
+More Trips to follow - Suggestions welcome
+*More info to follow depending on interest / weather possible trips Lopwell Dam/ Wivelscombe 
+creek or Halton Quay
+</p>
+
+
+<strong>Clubnights</strong>  
+<p>Hope to start this Thursday but at the moment it’s looking too windy hopefully prediction will 
+change in our favour later in week. Looking for less than force 3 currently predicting force 4 / 5.</p>
+<strong>First Aid</strong>
+<p>We are currently trying to arrange a 2 day first Aid course if anyone is interested please let Peter 
+Know as soon as possible as cost will depend on Numbers.</p>
+<strong>Coastal Navigation Course</strong>
+<p>Have had a few people show interest but need a few more to make it viable to organise a course if 
+you are interested or want to know more before deciding speak to Alan or Peter</p>
+<strong>Camping</strong>
+<p>Have had the suggestion to paddle up Looe River and camp in Campsite and return next day is this 
+something you would be interested in? if so let Peter Know to gauge possible interest before time is 
+spent investigating logistics.</p>
+<strong>Introductory Course</strong>
+<p>If you know anyone interested in a course let Phil Know then feel free to come along with them on 
+training course so there’s a friendly face they know.</p>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+<!-- END events modal -->
+
 
 <!-- modal popup -->
 <div class="d-grid">
@@ -486,6 +544,33 @@ Committee
   </div>
 </div>
  -->
+<!-- Events modal -->
+<a href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events 2024</a>
+
+<!-- The Modal -->
+<div class="modal" id="eventsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Latest Events</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>Lots of stuff going on here!</p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
@@ -559,5 +644,6 @@ Committee
 
 <!-- internal JS -->
 <script src="js/script.js"></script>
+
 </body>
 </html>
