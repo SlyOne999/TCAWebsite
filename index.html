@@ -1,141 +1,125 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Updated: 07/07/2024 -->  
-  <title>Tamar Canoe Association</title>  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCA Bootstrap Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
 
-  <!-- bootstrap css-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/css/styles.css" rel = "stylesheet">
 
-  <!-- bootstrap icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  
-  <!-- local css -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+  </head>
+  <body>
+<!-- Major update 25-07-2024 -->
 
-<body>
-<!-- Navbar ----------------------------------------------------------->
-<nav id="top" class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand"><img src="images/logo.jpg" style="width: 6rem;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!-- navbar -->
+  <nav id="top" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand"><img src="images/logo.jpg" height="40" alt="TCA Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Locarion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs/club-docs/membership-form.pdf" target="_blank">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coaching">Coaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#links">Links</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News and Events</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Location</a>
-        </li>
-        
-        <li class="nav-item"><a class="nav-link" href="/docs/club-docs/membership-form.pdf" target="_blank">Join</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="#coaching">Coaching</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">News and Events</a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link" href="/docs/news/newsletter-june2024.pdf" target="_blank">Newsletter June</a></li>
-            <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events</a>   </li>
-          </ul>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacts</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="mailto: chairman@tamarcanoeassociation.org.uk" target="_blank">Chairman</a></li>
-            <li><a class="dropdown-item" href="mailto: membership@tamarcanoeassociation.org.uk
+              <li><a class="nav-link" href="docs/news/newsletter-june2024.pdf" target="_blank">Newsletter June</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mailto: chairman@tamarcanoeassociation.org.uk" target="_blank">Chairman</a></li>
+              <li><a class="dropdown-item" href="mailto: membership@tamarcanoeassociation.org.uk
               " target="_blank">Membership Secretary</a></li>
-            <li><a class="dropdown-item" href="mailto: secretary@tamarcanoeassociation.org.uk
+              <li><a class="dropdown-item" href="mailto: secretary@tamarcanoeassociation.org.uk
               " target="_blank">Secretary</a></li>
-            <li><a class="dropdown-item" href="mailto: childprotectionofficer@tamarcanoeassociation.org.uk
+              <li><a class="dropdown-item" href="mailto: childprotectionofficer@tamarcanoeassociation.org.uk
               " target="_blank">Club Welfare Officer</a></li>
-            <li><a class="dropdown-item" href="mailto: newsletter@tamarcanoeassociation.org.uk" target="_blank">Newsletter Editor</a></li>
-            <li><a class="dropdown-item" href="mailto: treasurer@tamarcanoeassociation.org.uk" target="_blank">Treasurer</a></li>
-            <li><a class="dropdown-item" href="mailto: webmaster@tamarcanoeassociation.org.uk" target="_blank">Web Team</a></li>
-          </ul>
-        </li>
-        
-        <li class="nav-item"><a class="nav-link" href="/adds/adds.html" style="color: blue;">Boats for sale</a></li>     
+              <li><a class="dropdown-item" href="mailto: newsletter@tamarcanoeassociation.org.uk" target="_blank">Newsletter Editor</a></li>
+              <li><a class="dropdown-item" href="mailto: treasurer@tamarcanoeassociation.org.uk" target="_blank">Treasurer</a></li>
+              <li><a class="dropdown-item" href="mailto: webmaster@tamarcanoeassociation.org.uk" target="_blank">Web Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adds/adds.html">Boats for sale</a>
+          </li>
 
-        <!--facebook and instagram links-->
-        <li><a href="https://www.facebook.com/share/gyEKfafgbsSY1APg/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
-       <li><a href="https://www.instagram.com/tamarcanoe?igsh=Y2t4bTFkOWV4MjB2" target="_blank"><i class="bi bi-instagram m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+          <!--facebook and instagram links-->
+          <li><a href="https://www.facebook.com/share/gyEKfafgbsSY1APg/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+          <li><a href="https://www.instagram.com/tamarcanoe?igsh=Y2t4bTFkOWV4MjB2" target="_blank"><i class="bi bi-instagram m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 
 <!-- Evants Modal -->
 <div class="modal fade" id="eventsModal">
-<div class="modal-dialog modal-dialog-scrollable">
-<div class="modal-content">
-
-<!-- Modal Header -->
-<div class="modal-header">
-<h4 class="modal-title">Latest Events</h4>
-<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-</div>
-
-<!-- Modal body -->
-<div class="modal-body">
-<strong>Trips</strong>
-<p>7th April Surfing at Seaton Peter<br>
-14th April Looe dependant on weather sea Paddle or trip up river Peter<br>
-28th April gentle Sea trip / Sea Paddler Award Taster if interest. Peter<br>
-5th May Sea Paddle St Austell Area. Peter<br>
-19th May* Paddle from Boathouse Mike S<br>
-16th June * Paddle from Boathouse Mike S<br>
-13th - 14th* July Saltash Regatta Ina<br>
-More Trips to follow - Suggestions welcome
-*More info to follow depending on interest / weather possible trips Lopwell Dam/ Wivelscombe 
-creek or Halton Quay
-</p>
-
-
-<strong>Clubnights</strong>  
-<p>Hope to start this Thursday but at the moment it’s looking too windy hopefully prediction will 
-change in our favour later in week. Looking for less than force 3 currently predicting force 4 / 5.</p>
-<strong>First Aid</strong>
-<p>We are currently trying to arrange a 2 day first Aid course if anyone is interested please let Peter 
-Know as soon as possible as cost will depend on Numbers.</p>
-<strong>Coastal Navigation Course</strong>
-<p>Have had a few people show interest but need a few more to make it viable to organise a course if 
-you are interested or want to know more before deciding speak to Alan or Peter</p>
-<strong>Camping</strong>
-<p>Have had the suggestion to paddle up Looe River and camp in Campsite and return next day is this 
-something you would be interested in? if so let Peter Know to gauge possible interest before time is 
-spent investigating logistics.</p>
-<strong>Introductory Course</strong>
-<p>If you know anyone interested in a course let Phil Know then feel free to come along with them on 
-training course so there’s a friendly face they know.</p>
-</div>
-
-<!-- Modal footer -->
-<div class="modal-footer">
-<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-</div>
-
-</div>
-</div>
-</div>
-<!-- END events modal -->
-
-
-<!-- modal popup -->
-<div class="d-grid">
-  <button type="button" class="btn btn-danger btn-block" data-bs-toggle="modal" data-bs-target="#CoursesModal" style="font-size: 1.5rem;">>> Courses for beginers and new joiners <<</button>
-</div>
+  <div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal-content">
   
+  <!-- Modal Header -->
+  <div class="modal-header">
+  <h4 class="modal-title">Latest Events</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+  
+  <!-- Modal body -->
+  <div class="modal-body">
+    <strong>Trips</strong>
+    <p>No more trips planned - suggestions welcome</p>
+  
+    <strong>Coastal Navigation Course</strong>
+    <p>Have had a few people show interest but need a few more to make it viable to organise a course if you are interested or want to know more before deciding speak to Alan or Peter</p>
+  
+    <strong>Camping</strong>
+    <p>Have had the suggestion to paddle up Looe River and camp in Campsite and return next day is this something you would be interested in? if so let Peter Know to gauge possible interest before time is spent investigating logistics.</p>
+  
+    <strong>Introductory Course</strong>
+    <p>If you know anyone interested in a course let Phil Know then feel free to come along with them on training course so there’s a friendly face they know.</p>
+  </div>
+  
+  <!-- Modal footer -->
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  <!-- END events modal -->
+
+<!-- ad banner modal -->
+  <div class="text-bg-danger text-center py-1 mb-0">
+    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#CoursesModal">
+      <i class="bi bi-chevron-double-right"></i>
+      Courses for new and returning padelers
+      <i class="bi bi-chevron-double-left"></i>
+    </a>
+  </div>
+
   <!-- The Modal -->
   <div class="modal fade" id="CoursesModal">
     <div class="modal-dialog">
@@ -150,7 +134,6 @@ training course so there’s a friendly face they know.</p>
         <!-- Modal body -->
         <div class="modal-body">
           <p>Wednesday evenings - 24th July to 14st August</p>
-          <p>All day course - Sunday 21st July</p>
           <a href="mailto: membership@tamarcanoeassociation.org.uk" target="_blank">Contact the Membership Secretary for more infomation</a>
         </div>
   
@@ -161,169 +144,188 @@ training course so there’s a friendly face they know.</p>
       </div>
     </div>
   </div>     
-<!-- END of modal popup -->
+<!-- END ad modal -->
 
-<!-- Carousel ------------------------------------------------------------------->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicators/dots -->
+ <!-- Carousel -->
+ <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  
-  <!-- The slideshow/carousel -->
+
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/caroucel-group.jpeg" alt="Welcome to the Tamar Canoe Association" class="d-block" style="width:100%; max-height:650px;">
-      <div class="carousel-caption">
-        <h1 class="caroucel-h1" style="background-color: lightblue;">Welcome to the Tamar Canoe Association<br><span class="caroucel-h2">Based in Saltash, Cornwall</span></h1>
+    <div class="carousel-item active c-item">
+      <img src="/images/caroucel-group.jpeg" class="d-block w-100 c-img-bright c-img" alt="Slide 1">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="display-1 fw-bolder text-capitalize">Taymar Canoe Association</p>        
+        <p class="text-uppercase fs-3 mt-5">welcome</p>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/caroucel-paddling.jpg" alt="kayaking group on the sea" class="d-block" style="width:100%; max-height:650px;">
-      <div class="carousel-caption">
-        <h1 class="caroucel-h1">Kayaking<br><span class="caroucel-h2">Sea - River - Whitewater - Surf</span></h1>
-      </div> 
+
+    <div class="carousel-item c-item">
+      <img src="/images/caroucel-sea1.jpeg" class="d-block w-100 c-img" alt="Slide 2">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="display-1 fw-bolder text-capitalize">Taymar Canoe Association</p>       
+        <p class="text-uppercase fs-3 mt-5">Based in Saltash, Cornwall</p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/caroucel-paddleboarding.jpg" alt="paddleboarders on a river" class="d-block" style="width:100%; max-height:650px;">
-      <div class="carousel-caption">
-        <h1 class="caroucel-h1">Paddleboarding<br><span class="caroucel-h2">Standup - Sitdown - Yoga</span></h1>
-      </div>  
-    </div>
-    <div class="carousel-item">
-      <img src="images/caroucel-canoeing.jpg" alt="family canoing on a river" class="d-block" style="width:100%; max-height:650px;">
-      <div class="carousel-caption">
-        <h1 class="caroucel-h1">Canoeing<br><span class="caroucel-h2">A family day out</span></h1>
-      </div>  
+    
+    <div class="carousel-item c-item">
+      <img src="/images/pb1.jpg" class="d-block w-100 c-img" alt="Slide 3">
+      <div class="carousel-caption top-0 mt-4"> 
+        <p class="display-1 fw-bolder text-capitalize">Taymar Canoe Association</p>
+        <p class="text-uppercase fs-3 mt-5">kayak canoe paddleboard</p>
+      </div>
     </div>
   </div>
-  
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
   </button>
 </div>
 
-<!-- About Section ------------------------------------------------------------->
-<div class="odd-section-color py-sm-0 py-md-5 ">
-  <div class="container">
-    <div class="row">
-      <div class="column-66">
-        <h1 id="about" class="scroll-limit">About the club<br><span style="color:orangered">New & returning paddlers</span></h1>
-       <div class="lt-grey">
-        <h2>Joining</h2>
-        <p>The Tamar Canoe Association is based at Jubilee Green, Saltash, Cornwall.</p>
-        
-        <p><a class="text-decoration-none" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Google Maps</a></p>
-        <p><a class="text-decoration-none" href = "https://what3words.com/quick.dish.kite" target="_blank">What3words ///quick.dish.kite</a></p>
-        
-        <p>The club welcomes anyone interested in joining us on the water whatever your experience be it for your first Paddle to the experienced Paddler there is something for everyone. The Club caters for Canoes, Kayaks, Sit on Tops and Stand Up Paddleboards not sure which is right for you come and give them all a try to see which you like best. * min age applies.</p>
-        <p>We meet on Thursday evenings from 18:30 - 21:00 throughout the summer from April until the end of September with weekend trips planned for those who wish to take part.</p>
-        <p>The Tamar Canoe Association is a recreational  Club  Affiliated to British Canoeing run by Volunteers who give their time freely for the benefit of all.</p>
+<!-- 1st section-->
+ <div id="about" class="container-fluid py-3 py-md-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
 
-  <!-- accordians from https://www.w3schools.com/ --> 
-  <button class="accordion">Beginners, experienced paddlers and young people</button>
-  <div class="panel mb-1">
-    <p class="my-4">Introductory Courses - run on Wednesday evenings and last for four weeks.<br>Two Day Introductory Courses - run on some weekends.<br>Please see the <a class="text-decoration-none" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership Form</a> for more information.</p>
-    <p>When your course finishes you are welcome to join the Thursday club nights and integrate into the courses or paddling trips being run.</p>
-    <p>If you have paddled before and just wish to join the club please <a class="text-decoration-none" href="mailto: membership@tamarcanoeassociation.org.uk
-      " target="_blank">make contact</a> before sending membership form.</p>
-    <p>Membership is open to anyone over 11, 8 if Parents / guardian on the water.</p>
-  </div>
+          <h1 class="display-4">About the club<br><span style="color: orangered;">New & returning paddlers</span></h1>
+          <h2>Joining</h2>
+          <p>The Tamar Canoe Association is based at Jubilee Green, Saltash, Cornwall.</p>
 
-  <button class="accordion">Membership benefits</button>
-  <div class="panel mb-1">
-    <ul class="my-3">
-      <li>Free use of club equipment on main clubnight - Thursdays a small charge applies outside main clubnight.</li>
-      <li>Free Training or guided paddles on main clubnight subject to completing an introductory course or having equivalent experience.</li>
-      <li>Access to Club Coaches and Leaders expertise.</li>
-      <li>Discount as some canoeing shops like AS Watersports, Kayaks and Paddles, Nookie with membership card. See the <a class="text-decoration-none" href="#links">links</a> at the bottom.</li>
-      <li>Access to weekend trips and events.</li>
-      <li>Discounted Specialist training Courses subject to demand.</li>
-      <li>Paddle with likeminded spirits exploring the local area.</li>
-      <li>Chance to be best you can be among friends.</li>
-    </ul>
-    <p>You will need to bring your own suitable personal clothing.</p>
-  </div>
+          <p><a class="text-decoration-none" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Google Maps</a></p>
+          <p><a class="text-decoration-none" href = "https://what3words.com/quick.dish.kite" target="_blank">What3words ///quick.dish.kite</a></p>
+              
+          <p>The club welcomes anyone interested in joining us on the water whatever your experience be it for your first Paddle to the experienced Paddler there is something for everyone. The Club caters for Canoes, Kayaks, Sit on Tops and Stand Up Paddleboards not sure which is right for you come and give them all a try to see which you like best. * min age applies.</p>
+          <p>We meet on Thursday evenings from 18:30 - 21:00 throughout the summer from April until the end of September with weekend trips planned for those who wish to take part.</p>
+          <p>The Tamar Canoe Association is a recreational  Club  Affiliated to British Canoeing run by Volunteers who give their time freely for the benefit of all.</p>
 
-  <button class="accordion">Membership costs</button>
-  <div class="panel">
-    <div class="mt-3">
-      <table class="table">
-        <thead class="table-secondary">
-          <tr>
-            <th>Membership</th>
-            <th>Cost</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Junior Under 18 years on 1st April (Minimum age 11 years)</td>
-            <td>£20</td>
-          </tr>
-          <tr>
-            <td>Senior Over 18 years on 1st April</td>
-            <td>£40</td>
-          </tr>
-          <tr>
-            <td>Family Up to 2 Adults & up to 3 children at same address (Minimum age 8 years if parents on water)</td>
-            <td>£70 *</td>
-          </tr>
-          <tr>
-            <td>Introductory Courses (Membership is also required)</td>
-            <td>£35</td>
-          </tr>
-          <tr>
-            <td>British Canoeing certificates at cost subject to satisfactory course completion.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>* The cost for a family taking a course is capped at £70.00 (membership is also required so £70 + £70 = £140)</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+          <h2>FAQs</h2>
+<!-- accordian -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Beginners, experienced paddlers and young people
+              </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>Introductory Courses - run on Wednesday evenings and last for four weeks.<br>Two Day Introductory Courses - run on some weekends.<br>Please see the <a class="text-decoration-none" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership Form</a> for more information.</p>
+                  <p>When your course finishes you are welcome to join the Thursday club nights and integrate into the courses or paddling trips being run.</p>
+                  <p>If you have paddled before and just wish to join the club please <a class="text-decoration-none" href="mailto: membership@tamarcanoeassociation.org.uk" target="_blank">make contact</a> before sending membership form.</p>
+                  <p>Membership is open to anyone over 11, 8 if Parents / guardian on the water.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Membership benefits
+              </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Free use of club equipment on main clubnight - Thursdays a small charge applies outside main clubnight.</li>
+                    <li>Free Training or guided paddles on main clubnight subject to completing an introductory course or having equivalent experience.</li>
+                    <li>Access to Club Coaches and Leaders expertise.</li>
+                    <li>Discount as some canoeing shops like AS Watersports, Kayaks and Paddles, Nookie with membership card. See the <a class="text-decoration-none" href="#links">links</a> at the bottom.</li>
+                    <li>Access to weekend trips and events.</li>
+                    <li>Discounted Specialist training Courses subject to demand.</li>
+                    <li>Paddle with likeminded spirits exploring the local area.</li>
+                    <li>Chance to be best you can be among friends.</li>
+                  </ul>
+                  <p>You will need to bring your own suitable personal clothing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Membership costs
+              </button>
+              </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                <table class="table">
+                <thead class="table">
+                  <tr>
+                    <th>Membership</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <tr>
+                      <td>Junior Under 18 years on 1st April (Minimum age 11 years)</td>
+                      <td>£20</td>
+                    </tr>
+                    <tr>
+                      <td>Senior Over 18 years on 1st April</td>
+                      <td>£40</td>
+                    </tr>
+                    <tr>
+                      <td>Family Up to 2 Adults & up to 3 children at same address (Minimum age 8 years if parents on water)</td>
+                      <td>£70 *</td>
+                    </tr>
+                    <tr>
+                      <td>Introductory Courses (Membership is also required)</td>
+                      <td>£35</td>
+                    </tr>
+                    <tr>
+                      <td>British Canoeing certificates at cost subject to satisfactory course completion.</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>* The cost for a family taking a course is capped at £70.00 (membership is also required so £70 + £70 = £140)</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- END accordian -->
+
+              <div class="text-center my-3">
+                <button class="btn bi btn-l" style="background-color: orangered;">
+                  <a class="text-decoration-none text-white" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership form</a>
+                </button>
+              </div>
+
+            </div>
+            
+            <div class="col-md-5 d-none d-md-block">
+              <img src="images/448507767_10161783966396383_6987052626259896347_n.jpg" class="img-fluid w-100 mb-3" alt="club members">
+              <img src="images/saltash-regatta.jpg" class="img-fluid w-100" alt="club members">
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+ </div>
 
-<div class="btn-center"> <!-- only on small devices -->
-    <button class="btn bi btn-lg btn-center" style="background-color: orangered; margin-top: 50px;">
-      <a class="text-decoration-none" href="/docs/club-docs/membership-form.pdf" target="_blank" style="color:white">Membership form</a>
-    </button>
-</div>
-</div>
-      
-      <div class="column-33">
-        <img src="images/club-members.jpg" class="img-fluid no-img mb-3" alt="club menbers getting ready">
-        <img src="images/kayak.jpg" class="img-fluid no-img mb-3" alt="under the Tamar bridge">
-        <img src="images/club-site.jpg" class="img-fluid no-img" alt="club site at jubilee green, saltash, cornwall">
-      </div>
-    </div>
-  </div>
-</div>
+ <div class="d-block d-md-none">
+  <img src="images/448507767_10161783966396383_6987052626259896347_n.jpg" class="img-fluid" alt="...">
+ </div>
 
-<!-- Club nights & activities section ----------------------------------------->
-<div class="even-section-color py-sm-0 py-md-5">
-  <div class="container">
-    <div class="row">
-      
-      <div class="column-33">
-        <img src="images/paddling.jpg" class="img-fluid no-img mb-3" alt="kayaking group at sea near rocks">
-        <img src="images/jubilee-green.jpg" class="img-fluid no-img mb-3"  alt="view of Jubilee Green from the club site">
-        <img src="images/kayaks2.jpg" class="img-fluid" alt="setting out for an evenings paddle">
-      </div>
-      <div class="column-66">
-        <h1>Club nights & activities<br><span style="color:orangered;">See the world from a different perspective</span></h1>
+  <!-- 2nd section-->
+  <div class="container-fluid py-3 py-md-5" style="background-color: lightblue;">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-5 d-none d-md-block">
+            <img src="images/kayaks2.jpg" class="img-fluid w-100 mb-3" alt="club members">
+            <img src="images/448811468_10228755913754961_4444145156400138480_n.jpg" class="img-fluid w-100" alt="club members">
+          </div>
+          
+          <div class="col-md-7">
+            <h1 class=display-4>Club nights & activities<br><span style="color:orangered;">See the world from a different perspective</span></h1>
 
-        <h2>Whatever your interest</h2>
+        <h2 class="mt-4">Whatever your interest</h2>
         <p>During the summer season members can join one of the following groups:</p>
           <ul>
               <li>Journey - a peaceful paddle on the river</li>
@@ -341,245 +343,138 @@ training course so there’s a friendly face they know.</p>
           
           <p>Other awards are arranged subject to interest.</p>
           
-          <h2 style="margin-top: 30px;">Club activities</h2>
+          <h2>Club activities</h2>
           <p>Please remember the club is not just here to coach, anyone with their basic skills can just come along for a sociable paddle joining like minded paddlers, please contact us if you wish to find out more.</p>
-      </div>
+          </div>
+
+        </div>
     </div>
-  </div>
-</div>
+ </div>
 
-<!-- coaching Section ------------------------------------------------->
-<div class="odd-section-color py-sm-0 py-md-5">
-  <div id="coaching" class="container">
-    <div class="row">
-      <div class="show-img mt-4 img-fluid"></div><!-- only show img at media quiery screen width small -->
-
-      <div class="column-66">
-        
-        <h1>Coaching<br><span style="color:orangered;">Learn new skills</span></h1>
-      <div class="lt-grey">
-        <h2>Your paddling journey</h2>
-
-        <!-- accordians -->
-        <button class="accordion">Kayaking</button>
-        <div class="panel mb-1">
-          <p class="mt-3">The club caters for all abilities and disciplines, from a leisurely paddle with a group of like minded paddlers to specific disciplines like Surf Kayaking, Sea Kayaking, White Water Kayaking, Moving Water Kayaking. Whatever your interest we will cater for you, this is dependant on club coach availability and numbers on the day. The club coaches British Canoe Awards up to Paddle Explore in all disciplines, please remember all of our coaches are volunteers so this is subject to availability. Swimming pool sessions are run throughout the winter months (at an additional cost to cover pool hire) which allows members to practice their skills in warm clear water throughout the winter months.</p>
-        </div>
-
-        <button class="accordion">Stand Up Paddleboarding</button>
-        <div class="panel mb-1">
-          <p class="mt-3">The club has a growing group of paddleboarders of all ages and abilities who can go off on their own for a pleasant paddle or join in with the other groups for "Skills and Drills" or a journey. Coaching, when available, will help you get started with balance and the different strokes and techniques to control the paddleboard.</p>
-        </div>
-
-        <button class="accordion">Canoeing</button>
-        <div class="panel">
-          <p class="mt-3">The club has a dedicated canoeing group who paddle on Thursdays. This group can go for a pleasant flat water social paddle, coaching in skills to achieve your desired British Canoe Award if this is what you wish to do, just paddle with like minded paddlers, learn numerous skills including many different paddle strokes, tandum paddling, rafted paddling, sailing a canoe, poling etc. Although the canoe section predominantly paddles flat / slow moving water rivers during the winter white water trips are run for those who wish to participate. Social paddle trips with picnic's are arranged throughout the year, some are club trips run by coaches and some are just peer trips arranged by members.</p>
-        </div>
-        
-        <h2>Current Club Coaching</h2>
+ <div class="d-block d-md-none">
+  <img src="images/448811468_10228755913754961_4444145156400138480_n.jpg" class="img-fluid" alt="...">
+ </div>
+ 
+  <!-- 3rd section-->
+  <div id="coaching" class="container-fluid py-3 py-md-5">
+    <div class="container">
         <div class="row">
-          <div class="col">
-            <ul>
-              <li>Paddle Start</li>
-              <li>Paddle Explore</li>
-              <li>Paddle Discover</li>
-              <li>Paddlesport Safety and Rescue</li>
-              <li>Canoe Award</li>
-            </ul>
-          </div>
+          <div class="col-md-7">
+            <h1 class="display-4">Coaching<br><span style="color: orangered;">Learn new skills</span></h1>
+            <h2 class="mt-4">Your paddling journey</h2>    
+                
 
-          <div class="col">
-            <ul>
-              <li>Sea Kayak</li>
-              <li>Surf Kayak</li>
-              <li>White Water Award</li>
-              <li>Touring Award</li>
-            </ul>
+        <!-- accordian -->
+            <div class="accordion accordion-flush" id="accordionFlushTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Kayaking
+                </button>
+                </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushTwo">
+                  <div class="accordion-body">The club caters for all abilities and disciplines, from a leisurely paddle with a group of like minded paddlers to specific disciplines like Surf Kayaking, Sea Kayaking, White Water Kayaking, Moving Water Kayaking. Whatever your interest we will cater for you, this is dependant on club coach availability and numbers on the day. The club coaches British Canoe Awards up to Paddle Explore in all disciplines, please remember all of our coaches are volunteers so this is subject to availability. Swimming pool sessions are run throughout the winter months (at an additional cost to cover pool hire) which allows members to practice their skills in warm clear water throughout the winter months.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Stand Up Paddleboarding
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">The club has a growing group of paddleboarders of all ages and abilities who can go off on their own for a pleasant paddle or join in with the other groups for "Skills and Drills" or a journey. Coaching, when available, will help you get started with balance and the different strokes and techniques to control the paddleboard.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Canoeing
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">The club has a dedicated canoeing group who paddle on Thursdays. This group can go for a pleasant flat water social paddle, coaching in skills to achieve your desired British Canoe Award if this is what you wish to do, just paddle with like minded paddlers, learn numerous skills including many different paddle strokes, tandum paddling, rafted paddling, sailing a canoe, poling etc. Although the canoe section predominantly paddles flat / slow moving water rivers during the winter white water trips are run for those who wish to participate. Social paddle trips with picnic's are arranged throughout the year, some are club trips run by coaches and some are just peer trips arranged by members.</div>
+                    </div>
+                  </div>
+                </div>
+      <!-- END accordian -->
+
+          <h2 class=mt-4>Current Club Coaching</h2>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li>Paddle Start</li>
+                <li>Paddle Explore</li>
+                <li>Paddle Discover</li>
+                <li>Paddlesport Safety and Rescue</li>
+                <li>Canoe Award</li>
+              </ul>
+            </div>
+  
+            <div class="col">
+              <ul>
+                <li>Sea Kayak</li>
+                <li>Surf Kayak</li>
+                <li>White Water Award</li>
+                <li>Touring Award</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-      <div class="column-33">
-        <img src="images/skills-and-drills.jpg" class="img-fluid no-img mb-3" alt="rescue training">
-        <img src="images/kayaks1.jpg" class="img-fluid no-img" alt="group of kayakers on a local river">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- final Section ----------------------------------------------------------------------->
-<div class="even-section-color py-5">
-  <div class="container">
-    <div class="row">
+            <div class="col-md-5 d-none d-md-block">
+              <img src="images/group1.jpg" class="img-fluid w-100 mb-3" alt="club members">
+              <img src="images/kayaks1.jpg" class="img-fluid w-100" alt="club members">
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="d-block d-md-none">
+  <img src="images/mixed-group-at-sea.jpg" class="img-fluid w-100" alt="...">
+ </div>
+
+  <!-- 4th section-->
+  <div class="container-fluid py-3 py-md-5" style="background-color: lightblue;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 d-none d-md-block">
+          <img src="images/mixed-group-at-sea.jpg" class="img-fluid w-100 mb-3" alt="club members">
+          <img src="images/mixed-group-at-sea1.jpg" class="img-fluid w-100" alt="club members">
+        </div>
       
-      <div class="column-33">
-        <img src="images/mixed-group-at-sea.jpg" class="img-fluid no-img mb-3" alt="mixed group at sea">
-        <img src="images/mixed-group-at-sea1.jpg" class="img-fluid" alt="mixed group at sea">
-      </div>
+        <div class="col-md-7">
+          <h1 class="display-4 mb-4">Finally<br><span style="color: orangered;">The benefits of paddling</span></h1>
+          <h2>Sharing an experience</h2>
+          <p>Paddling can be a solitary journey or the shared experience of drifting down river, exploring inlets, watching the wild life and taking in a sunset from a different perspective.
 
-      <div class="column-66">
-        <h1>Finally<br><span style="color:orangered;">The benefits of paddling</span></h1>
-        <h2>Sharing an experience</h2>
-        <p>Paddling can be a solitary journey or the shared experience of drifting down river, exploring inlets, watching the wild life and taking in a sunset from a different perspective.</p>
-        <p>It can be the excitement of "Skills & Drills", games and just plain messing about on the river in a safe and controlled manner.</p>
-        <p>As you progress through the paddling season you will find yourself slowly getting fitter. Paddling is good for the soul and gives you a sense of achievement after you master a new skill.</p>
-        <p>You can do all this no matter your age and abilities.</p>
+          It can be the excitement of "Skills & Drills", games and just plain messing about on the river in a safe and controlled manner.
+
+          As you progress through the paddling season you will find yourself slowly getting fitter. Paddling is good for the soul and gives you a sense of achievement after you master a new skill.
+
+          You can do all this no matter your age and abilities.</p>
 
         <!-- quote -->
-        <div class="div-centered" style="margin-top:60px;">
-          <div style="border-left: 8px solid orangered;">
-            <i class="bi bi-quote quote-icon m-1"></i>
-            <p class="quote-txt p-2">Believe me, my young friend, there is nothing - absolutely nothing - half so much worth doing as simply messing about in boats.<br>
+          <div class="div-centered mt-5">
+            <div style="border-left: 4px solid orangered;">
+              <i class="bi bi-quote m-1" style="font-size: 2rem; opacity: 0.2"></i>
+              <p class="h2 p-2" style="margin-top:-20px; Font-style: italic;">Believe me, my young friend, there is nothing - absolutely nothing - half so much worth doing as simply messing about in boats.<br>
               ~ Kenneth Grahame.</p>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- footer ----------------------------------------------------------------------------->
-<div id="links" class="footer-index">
-
-<!-- ////// club documentation block commented out awaiting new audited documents //////// -->
-<!-- <div class="row mt-4">
-  <h2 class="h2-footer">Club documentation</h2>
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/membershipform.pdf" target="_blank">Membership Form</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/handbook.pdf" target="_blank">Club Handbook</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/completepolicies.pdf" target="_blank">Club Policies</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/childandvapolicy.pdf" target="_blank">Child and Vunerable Adult Policy</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/policyadoption.pdf" target="_blank">Policy Adoption</a></li>
-    </ul>
-  </div>
-  
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/constitution-sept23.pdf" target="_blank">Constitution</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/actionplan.pdf" target="_blank">Action Plan</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/coachratio.pdf" target="_blank">Coach Ratio</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/raclubnights.pdf" target="_blank">Risk Assessment - Club Night</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/raestuaryandsea.pdf" target="_blank">Risk Assessment - Estuary and Sea</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/topclub.pdf" target="_blank">Top Club</a></li>
-      <li class="text-bg-warning">2023 AGM Minutes - not on site</li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/welfare.pdf" target="_blank">Welfare Officers</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/sst.pdf" target="_blank">Level 1 Site Specific Training</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/code-of-conduct.pdf" target="_blank">Club Code of Conduct</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/club-docs/emergencyprocedures.pdf" target="_blank">Emergency Procedures</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/ramovingwater.pdf" target="_blank">Risk Assessment - Moving Water</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/rapoolsessions.pdf" target="_blank">Risk Assessment - Swimming Pool</a></li>
-      <li><a class="text-decoration-none" href="/docs/club-docs/clubmark.pdf " target="_blank">Club Mark</a></li>
-    </ul>
-  </div>
-</div>
-<hr>
-
-Committee
-<div class="row">
-  <h2 class="h2-footer">Committee</h2>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-decoration-none" href="/docs/committee/chairman.pdf" target="_blank">Chairman - Emma Lock</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/vicechairman.pdf" target="_blank">Vice Chairman - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/clubmarkcoordinator.pdf" target="_blank">Club Mark Co-ordinator - Peter Crago</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/membershipsec.pdf" target="_blank">Membership Secretary - Phil Thorn</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/secretary.pdf" target="_blank">Secretary - Ina Nicks</a></li>
-
-      <li><a class= "text-decoration-none" href="/docs/committee/treasurer.pdf" target="_blank">Treasurer - Hilary Winsor</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/poolcoordinator.pdf" target="_blank">Pool Program Coordinator - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/newslettereditor.pdf" target="_blank">Newsletter Editors - Alison Dunbar / Clair Stevens</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/seniorrep.pdf" target="_blank">Senior Representative - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/familyrep.pdf" target="_blank">Family Representative - TBC</a></li>
-
-      <li class="text-bg-warning">Junior Representative - TBC + no docs</a></li>
-    </ul>
-  </div>
-  
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/media.pdf" target="_blank">Media - TBC</a></li>
-
-      <li><a class="text-decoration-none" href="/docs/committee/socialsec.pdf" target="_blank">Social Secretary - Kellie Summerfield</a></li>
-
-      <li class="text-bg-warning">Coach Development Officer - TBC + no docs</li>
-
-      <li><a class="text-decoration-none text-bg-warning" href="/docs/committee/childprotectionofficer.pdf" target="_blank">Club Welfare Officers - TBC</a></li>
-    </ul>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <ul>
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/eventsorganiser.pdf" target="_blank">Event Welfare Officer - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/webmaster.pdf" target="_blank">Website Team - TBC</a></li>
-
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/equipmentofficer.pdf" target="_blank">Equipment Coordinator - TBC</a></li>
-      
-      <li><a class="text-bg-warning text-decoration-none" href="/docs/committee/summerwintercoordinator.pdf" target="_blank">Summer and Winter Program Coordinator - TBC</a></li>
-    </ul>
-  </div>
-</div>
- -->
-<!-- Events modal -->
-<a href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events 2024</a>
-
-<!-- The Modal -->
-<div class="modal" id="eventsModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Latest Events</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <p>Lots of stuff going on here!</p>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
 
 <!-- links -->
-  <!-- <hr> -->
-  <div class="row mt-4">
+<div id="links" class="container-fluid bg-dark text-white py-3">
+  <div class="container">
+  <div class="row">
     <h2 class="h2-footer">Useful links</h2>
     <div class="col-sm-12 col-md-6 col-lg-3">
-      <p class="p-col-headings">Various</p>
+      <p>Various</p>
       <ul>
         <li><a class="text-decoration-none" href="http://easytide.ukho.gov.uk/EASYTIDE/EasyTide/SelectPort.aspx" target="_blank">Tides</a></li>
         <li><a class="text-decoration-none" href="http://magicseaweed.com/>Surf" target="_blank">Surf</a></li>
@@ -591,7 +486,7 @@ Committee
     </div>
     
     <div class="col-sm-12 col-md-6 col-lg-3">
-      <p class="p-col-headings">Commercial Coaching</p>
+      <p>Commercial Coaching</p>
       <ul>
         <li><a class="text-decoration-none" href="http://gene17kayaking.com/" target="_blank">Gene 17 Kayaking</a></li>
         <li><a class="text-decoration-none" href="http://www.fluidskills.com/" target="_blank">Fluid Skills</a></li>
@@ -600,7 +495,7 @@ Committee
     </div>
 
     <div class="col-sm-12 col-md-6 col-lg-3">
-      <p class="p-col-headings">Shops</p>
+      <p>Shops</p>
       <ul>
         <li><a class="text-decoration-none" href="http://www.kayaksandpaddles.co.uk/" target="_blank">Kayaks and Paddles</a></li>
         <li><a class="text-decoration-none" href="http://www.aswatersports.co.uk/" target="_blank">AS Watersports</a></li>
@@ -610,7 +505,7 @@ Committee
     </div>
 
     <div class="col-sm-12 col-md-6 col-lg-3">
-      <p class="p-col-headings">Canoe Assoiations and Sponsors</p>
+      <p>Canoe Assoiations and Sponsors</p>
       <ul>
         <li><a class="text-decoration-none" href="https://www.britishcanoeing.org.uk/" target="_blank">British Canoeing</a></li>
         <li><a class="text-decoration-none" href="https://www.connectsport.co.uk/organisation/cornwall-sports-partnership" target="_blank">Cornwall Sports Partnership</a></li>
@@ -618,32 +513,34 @@ Committee
       </ul>
     </div>
   </div>
+
   <hr>
+
 <!-- banners -->
-<div class="row  mt-4">
-   <div class="col-sm-12 col-md-6">
-    <img class="rounded mx-auto mb-3" src="images/paddle-england-aff-club-logo.jpg" style="display:block;" alt="paddle england logo">
+  <div class="row mt-4">
+    <div class="col-sm-12 col-md-6">
+      <img class="rounded mx-auto mb-3" src="images/paddle-england-aff-club-logo.jpg" style="display:block;" alt="paddle england logo">
   </div>
   <div class="col-sm-12 mb-3 col-md-6">
     <img class="rounded mx-auto" src="images/lottery-sport-england.jpg"  style="display:block;" alt="lottery funded sport england logo">   
   </div>
-</div>
-<hr>
-
-<div class="text-center">
-  <button class="btn bi btn-sm mb-2" style="background-color: orangered;">
-    <a class="text-decoration-none" href="#top" style="color:white">Top</a>
-  </button>
-
-  <p>Tamar Canoe Association - <span id="js-year"></span></p> <!-- JS auto year update -->
   </div>
+
+<!-- footer -->
+  <div class="text-center">
+    <button class="btn bi btn-sm mb-2" style="background-color: orangered;">
+      <a class="text-decoration-none text-white" href="#top">Top</a>
+    </button>
+    <p class="text-white">Tamar Canoe Association - <span id="js-year"></span></p><!-- JS auto year update -->
+  </div>
+  
+</div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<!-- internal JS -->
-<script src="js/script.js"></script>
-
-</body>
+  <!-- internal JS -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
