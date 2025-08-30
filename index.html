@@ -13,7 +13,7 @@
 
   </head>
   <body>
-<!-- updated 24-04-2025 -->
+<!-- updated 19-08-2025 -->
 
 <!-- navbar -->
   <nav id="top" class="navbar navbar-expand-lg bg-body-tertiary">
@@ -42,7 +42,10 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
             <ul class="dropdown-menu">
+
+              <!-- comment/uncomment to activate the evants modal further down the page -->
               <!--<li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events</a></li><!-->
+              
               <li><a class="nav-link" href="docs/news/newsletter-winter2025.pdf" target="_blank">Winter Newsletter</a></li>
               <li><a class="nav-link" href="docs/news/newsletter-autumn2024.pdf" target="_blank">Autumn Newsletter</a></li>
             </ul>
@@ -76,71 +79,39 @@
     </div>
   </nav>
 
-<!-- Events Modal -->
+<!-- Events Modal - comment out the link above to activate/deactivate as required-->
 <div class="modal fade" id="eventsModal">
   <div class="modal-dialog modal-dialog-scrollable">
-  <div class="modal-content">
+    <div class="modal-content">
   
-  <!-- Modal Header -->
-  <div class="modal-header">
-  <h4 class="modal-title">Latest Events</h4>
-  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-  </div>
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Latest Events</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
   
-  <!-- Modal body -->
-  <div class="modal-body">
-    <strong>Trips</strong>
-    <p>No more trips planned - suggestions welcome</p>
+    <!-- Modal body -->
+    <div class="modal-body">
+      <strong>Trips</strong>
+      <p>No more trips planned - suggestions welcome</p>
   
-    <strong>Introductory Course</strong>
-    <p>If you know anyone interested in a course let Phil Know then feel free to come along with them on training course so there’s a friendly face they know.</p>
-  </div>
+      <strong>Introductory Course</strong>
+      <p>If you know anyone interested in a course let Phil Know then feel free to come along with them on training course so there’s a friendly face they know.</p>
+    </div>
   
-  <!-- Modal footer -->
-  <div class="modal-footer">
-  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-  </div>
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
   
+    </div>
   </div>
-  </div>
-  </div>
+</div>
   <!-- END events modal -->
 
-<!-- START red ad banner modal - comment/uncomment and edit as required -->
-  <div class="text-bg-danger text-center py-1 mb-0">
-    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#CoursesModal">2025 Courses for new and returning paddlers</a>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal fade" id="CoursesModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+<!-- START red ad banner modal - insert from code-snipperts.txt as required -->
   
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Course dates</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p>Wednesday nights<br>
-            9th April to 30th May<br>
-            14th May to 4th June<br>
-            18th June to 9th July<br>
-            23rd July to 13th August</p>
-            <p>Sundays 13th and 20th July</p>
-
-          <a href="mailto: membership@tamarcanoeassociation.org.uk" target="_blank">Contact the Membership Secretary for more Information</a>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>   
 <!-- END ad modal -->
 
  <!-- Carousel -->
@@ -290,9 +261,13 @@
               </div>
 <!-- END accordion -->
 
+              <!-- this block controls the action of the button - it opens the menbership form or an email link depending on the season -->
+              <!-- comment/uncomment as required-->
               <div class="text-center my-3">
                 <button class="btn bi btn-l" style="background-color: orangered;">
-                  <a class="text-decoration-none text-white" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership form</a>
+                  <i class="bi bi-envelope-fill m-1" style="font-size: 1.25rem; color:white"></i>
+                  <a class="text-decoration-none text-white" href="mailto: membership@tamarcanoeassociation.org.uk" target="_blank">Membership Enquiries</a>
+                  <!-- <a class="text-decoration-none text-white" href="/docs/club-docs/membership-form.pdf" target="_blank">Membership form</a> -->              
                 </button>
               </div>
 
