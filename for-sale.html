@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Updated: 08/12/2025 -->  
+  <title>Items for sale</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/common/logo.jpg">
+
+  <!-- bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- sitewide CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- CSS -->
+    <style>
+      div.scroll-container {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 6px;
+      }
+      
+      div.scroll-container img {
+        padding: 6px;
+      }
+    </style>
+
+<!-- updated 04/12/2025-->
+</head>
+
+<body>
+<div">
+<!-- navbar -->
+ <nav id="top" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div>
+        <a href="#" class="navbar-brand"><img src="images/common/logo.jpg" height="40" alt="TCA Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/place/Tamar+Canoe+Association/@50.4115247,-4.2022986,15.41z/data=!4m6!3m5!1s0x486c93c634e1a39f:0xaee56f9a313d8907!8m2!3d50.4098191!4d-4.2069351!16s%2Fg%2F11kh9fcdkf?entry=ttu" target="_blank">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs/club-docs/membership-form.pdf" target="_blank">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#coaching">Coaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#links">Links</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
+            <ul class="dropdown-menu">
+              <!-- comment/uncomment to activate the evants modal further down the page -->
+              <!--<li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#eventsModal">Events</a></li><!-->
+              <li><a class="nav-link" href="docs/news/newsletter-winter2025.pdf" target="_blank">Winter Newsletter</a></li>    
+              <li><a class="nav-link" href="docs/news/newsletter-summer2025.pdf" target="_blank">Summer Newsletter</a></li>    
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mailto: chairman@tamarcanoeassociation.org.uk">Chairman</a></li>
+              <li><a class="dropdown-item" href="mailto: membership@tamarcanoeassociation.org.uk">Membership Secretary</a></li>
+              <li><a class="dropdown-item" href="mailto: secretary@tamarcanoeassociation.org.uk">Secretary</a></li>
+              <li><a class="dropdown-item" href="mailto: childprotectionofficer@tamarcanoeassociation.org.uk">Club Welfare Officer</a></li>
+              <li><a class="dropdown-item" href="mailto: newsletter@tamarcanoeassociation.org.uk">Newsletter Editor</a></li>
+              <li><a class="dropdown-item" href="mailto: treasurer@tamarcanoeassociation.org.uk">Treasurer</a></li>
+              <li><a class="dropdown-item" href="mailto: webmaster@tamarcanoeassociation.org.uk">Web Team</a></li>
+            </ul>
+          </li>
+
+          <!--facebook and instagram links-->
+          <li><a href="https://www.facebook.com/share/gyEKfafgbsSY1APg/?mibextid=LQQJ4d" target="_blank" data-bs-toggle="tooltip"  data-bs-placement="bottom" data-bs-title="Visit our Facebook page"><i class="bi bi-facebook m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+          <li><a href="https://www.instagram.com/tamarcanoe?igsh=Y2t4bTFkOWV4MjB2" target="_blank" data-bs-toggle="tooltip" data-bs-title="Visit our Instagram page" data-bs-placement="bottom"><i class="bi bi-instagram m-1" style="font-size: 2rem; color: cornflowerblue;"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- END nav -->
+
+<!-- main section-->
+<div class="py-5">
+  <h1>Items for sale</h1>
+  <p></p>
+  <hr>
+
+  <!-- boat 1 -->
+  <!--
+  <div class="my-5">
+    <h2>boat make/model etc<span style="color:blue"> price</span></h2></h2>
+    <p>Short description.</p>
+
+  email button 
+    <div class="text-left">
+    <button class="btn bi btn-sm mb-2" style="background-color: orangered;">
+      <a class="text-decoration-none" href="mailto: " style="color:white">Email for more info</a>
+    </button>
+
+    <div class="scroll-container">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+      <img src="#" alt="..." width="200" height="300">
+    </div>
+  </div>
+</div>
+-->
+<!-- END Main Section ------------------------------------------------------------->
+
+<!-- footer ----------------------------------------------------------------------------->
+<div id="links" class="bg-dark text-white py-3">
+  <div class="container">
+    <div class="row">
+      <h2>Useful links</h2>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <p>Various</p>
+        <ul>
+          <li><a class="text-decoration-none" href="http://easytide.ukho.gov.uk/EASYTIDE/EasyTide/SelectPort.aspx" target="_blank">Tides</a></li>
+          <li><a class="text-decoration-none" href="http://magicseaweed.com/>Surf" target="_blank">Surf</a></li>
+          <li><a class="text-decoration-none" href="http://www.metoffice.gov.uk/" target="_blank">Weather</a></li>
+          <li><a class="text-decoration-none" href="http://www.ukrafting.co.uk/" target="_blank">National White Water Centre</a></li>
+          <li><a class="text-decoration-none" href="http://www.ciww.com/" target="_blank">Cardiff International White Water Centre</a></li>
+          <li><a class="text-decoration-none" href="http://www.visitleevalley.org.uk/en/content/cms/london2012/lee-valley-white-water-centre/" target="_blank">Lee Valley White Water Centre</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <p>Commercial Coaching</p>
+        <ul>
+          <li><a class="text-decoration-none" href="http://gene17kayaking.com/" target="_blank">Gene 17 Kayaking</a></li>
+          <li><a class="text-decoration-none" href="http://www.fluidskills.com/" target="_blank">Fluid Skills</a></li>
+          <li><a class="text-decoration-none" href="http://www.moss-coaching.co.uk/" target="_blank">Moss Coaching</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <p>Shops</p>
+        <ul>
+          <li><a class="text-decoration-none" href="http://www.kayaksandpaddles.co.uk/" target="_blank">Kayaks and Paddles</a></li>
+          <li><a class="text-decoration-none" href="http://www.aswatersports.co.uk/" target="_blank">AS Watersports</a></li>
+          <li><a class="text-decoration-none" href="http://www.south-coast-canoes.co.uk/" target="_blank">South Coast Canoes</a></li>
+          <li><a class="text-decoration-none" href="http://www.canoe-shops.co.uk/" target="_blank">Canoe Shops UK</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <p>Canoe Associations and Sponsors</p>
+        <ul>
+          <li><a class="text-decoration-none" href="https://www.britishcanoeing.org.uk/" target="_blank">British Canoeing</a></li>
+          <li><a class="text-decoration-none" href="https://www.connectsport.co.uk/organisation/cornwall-sports-partnership" target="_blank">Cornwall Sports Partnership</a></li>
+          <li><a class="text-decoration-none" href="https://www.sportengland.org/" target="_blank">Sport England</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <hr>
+
+<!-- club docs -->
+<!-- 12 spaces spare for club docs insertion from: docs/club-docs/ -->
+<div class="row">
+    <h2>Club documents</h2>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-club-constitution.pdf" target="_blank">Club Constitution</a></li>
+        <li><a class="text-decoration-none" href="docs/club-docs/safeguarding-children-and-vulnerable-adults-policy.pdf" target="_blank">Safeguarding Children and Vulnerable Adults</a></li>
+  <!--  <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li> -->
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-committee-roles-and-responsibilities-2023-24.pdf" target="_blank">Committee Roles</a></li>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-equality-diversity-and-inclusion-policy.pdf" target="_blank">Equality, Diversity and Inclusion Policy</a></li>
+    <!--<li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li> -->
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-club-code-of-conduct.pdf" target="_blank">Code of Conduct</a></li>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-club-disciplinary-and-appeals-policy.pdf" target="_blank">Disciplinary Policy</a></li>
+   <!-- <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li> -->
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-first-aid-policy-23-24.pdf" target="_blank">First Aid Policy</a></li>
+        <li><a class="text-decoration-none" href="docs/club-docs/tamar-canoe-association-health-and-safety-policy-statement.pdf" target="_blank">Health and Safety Policy</a></li>
+   <!-- <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li>
+        <li><a class="text-decoration-none" href="#" target="_blank">doc description</a></li> -->
+      </ul>
+    </div>
+  </div> 
+
+  <hr>
+
+<!-- banners -->
+  <div class="row mt-4">
+    <div class="col-sm-12 col-md-6 mb-3">
+      <img class="rounded mx-auto" src="images/common/paddle-england-aff-club-logo.jpg" style="display:block;" alt="paddle england logo">
+    </div>
+    <div class="col-sm-12 col-md-6 mb-3">
+      <img class="rounded mx-auto" src="images/common/lottery-sport-england.jpg"  style="display:block;" alt="lottery funded sport england logo">   
+    </div>
+  </div>
+
+  <!-- Button TOP -->
+  <div class="text-center">
+    <button class="btn bi btn-sm mb-2" style="background-color: orangered;">
+      <a class="text-decoration-none text-white" href="#top">Top</a>
+    </button>
+
+  <!-- JS auto year update -->  
+    <p class="text-white">Tamar Canoe Association - <span id="js-year"></span></p>
+  </div>
+  
+</div>
+</div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- internal JS -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
