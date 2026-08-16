@@ -1,0 +1,34 @@
+<div class="text-bg-danger text-center py-3 mb-0">
+    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#CoursesModal">2026 Courses for new and returning paddlers</a>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="CoursesModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Course dates 2026</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Wednesday nights<br>
+            8th April to 29th April<br>
+            13th May to 3rd June<br>
+            17th June to 8th July<br>
+            22rd July to 12th August</p>
+          <p>Sundays 12th and 19th July</p>
+
+          <a href="mailto: membership@tamarcanoeassociation.org.uk" target="_blank">Contact the Membership Secretary for more Information</a>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
